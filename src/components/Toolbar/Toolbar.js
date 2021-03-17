@@ -1,4 +1,7 @@
 import classes from "./Toolbar.module.css";
+import Nav from "../Nav/Nav";
+import Logo from "../Logo/Logo";
+
 
 const Toolbar = ({children}) => {
   return (
