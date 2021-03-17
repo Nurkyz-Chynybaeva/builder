@@ -3,7 +3,7 @@ import Nav from "../Nav/Nav";
 import Logo from "../Logo/Logo";
 
 
-const Toolbar = ({children}) => {
+const Toolbar = ({ }) => {
   return (
     <div className = {classes.Toolbar}>
     <Logo/>
