@@ -1,4 +1,5 @@
 import Layout from "./components/Layout/Layout";
+import classes from "./App.css";
 
 function App() {
   return (
@@ -6,6 +7,10 @@ function App() {
 
       <Layout>
 Awesome builder by Nurkyz Chynybaeva 
+
+
+
+
       </Layout>
 
     </div>
