@@ -1,10 +1,12 @@
+import Layout from "./components/Layout/Layout";
 
 
 function App() {
   return (
     <div className="App">
-      
-Awesome builder by Nurkyz Chynybaeva
+      <Layout>
+Awesome builder by Nurkyz Chynybaeva 
+      </Layout>
 
     </div>
   );
