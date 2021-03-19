@@ -3,8 +3,8 @@
   justify-content: space-between;
   padding: 10px;
 
-  color: white;
-  background-color: red;
+  color: rgb(243, 137, 155);
+  background-color: white;
   box-shadow: 0 0 10px rgba(0, 0 , .5);
 
   position: sticky;

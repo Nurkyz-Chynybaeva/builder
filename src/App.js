@@ -6,11 +6,21 @@ function App() {
     <div className="App">
 
       <Layout>
-Awesome builder by Nurkyz Chynybaeva 
-
-
-
-
+Awesome builder by Nurkyz Chynybaeva <br/>
+Layout <br/>
+Layout <br/>
+Layout <br/>
+Layout <br/>
+Layout <br/>
+Layout <br/>
+Layout <br/>
+Layout <br/>
+Layout <br/>
+Layout <br/>
+Layout <br/>
+Layout <br/>
+Layout <br/>
+Layout <br/>
       </Layout>
 
     </div>
