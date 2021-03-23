@@ -1,3 +1,13 @@
-.Drawer{
-  background-color: rgb(114, 250, 220);
+.Drawer .content{
+ width: 250px;
+ height: 100%;
+
+  color: rgb(243, 137, 155);
+  background-color: rgb(245, 224, 224);
+  box-shadow: 0 0 10px rgba(0, 0 , .5);
+ font-size: 25px;
+ position: fixed;
+  top:0;
+  left: 0;
 }
+
