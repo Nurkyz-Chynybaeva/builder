@@ -1,13 +1,29 @@
 .Drawer .content{
  width: 250px;
  height: 100%;
-
-  color: rgb(243, 137, 155);
-  background-color: rgb(245, 224, 224);
+ color: rgb(188, 106, 226);
+ background-color: #f0defd;
   box-shadow: 0 0 10px rgba(0, 0 , .5);
  font-size: 25px;
  position: fixed;
-  top:0;
+ top: 0;
   left: 0;
+  transition: transform .3s ease-out;
+text-align: center;
+
 }
 
+
+
+
+.open {
+  transform: translateX(0);
+}
+.close {
+  transform: translateX(-260px);
+}
+
+@media (min-width: 550px) {
+  .Drawer  {
+    display: none;
+  }}

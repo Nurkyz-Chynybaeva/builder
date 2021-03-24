@@ -1,12 +1,13 @@
 import Layout from "./components/Layout/Layout";
 import "./App.css";
+import DecorBuilder from  "./components/DecorBuilder/DecorBuilder";
 
 function App() {
   return (
     <div className="App">
 
       <Layout>
-Awesome builder by Nurkyz Chynybaeva 
+      <DecorBuilder />
       </Layout>
 
     </div>

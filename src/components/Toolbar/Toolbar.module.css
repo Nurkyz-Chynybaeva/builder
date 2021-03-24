@@ -1,13 +1,29 @@
-.Toolbar{
+
+
+.Toolbar {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  font-size: 25px;
-  color: rgb(243, 137, 155);
-  background-color: rgb(245, 224, 224);
-  box-shadow: 0 0 10px rgba(0, 0 , .5);
-
   position: sticky;
-  top:0;
+  top: 0;
   left: 0;
+
+  font-size: 2rem;
+
+
+
+
+  color: rgb(188, 106, 226);
+
+
+
+
+  
+  background-color: #f0defd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+@media (max-width: 549px) {
+  .Toolbar nav {
+    display: none;
+  }
 }
