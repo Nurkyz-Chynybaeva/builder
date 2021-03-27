@@ -7,7 +7,8 @@ import {useState} from "react";
 const DecorBuilder = () => {
     
     const [butterflies , setButterflies ] = useState({ 
-
+        first : 5 ,   
+        roz : 5 
       
 
     });
