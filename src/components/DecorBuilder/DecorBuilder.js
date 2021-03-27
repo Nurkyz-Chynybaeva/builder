@@ -26,3 +26,17 @@ const DecorBuilder = () => {
 
     return ( <div className={classes.DecorBuilder}>
          <DecorPreview butterflies={butterflies}/>
+
+         <DecorControls 
+        
+        />
+
+
+
+
+
+
+
+
+
+        
