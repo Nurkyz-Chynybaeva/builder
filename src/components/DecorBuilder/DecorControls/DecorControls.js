@@ -16,7 +16,12 @@ const DecorControls =({butterflies , addButterfly , removeButterfly}) =>{
         <div className={classes.DecorControls}>
         <strong>Colors</strong>
         {results}
+        </div>
+        );
+    }
 
+
+    export default DecorControls;
 
 
 
