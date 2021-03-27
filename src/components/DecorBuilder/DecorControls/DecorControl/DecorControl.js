@@ -9,6 +9,9 @@ const DecorControl = ( {type , add , remove}) => {
 
 
 
+<div className={classes.butterfly}>
+       <PartsDecor type={type} />
+      </div>
 
 <button className = {classes.less} onClick = {() => remove(type)}>-</button>
   </div>);
