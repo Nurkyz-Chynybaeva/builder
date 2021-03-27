@@ -17,3 +17,10 @@ const DecorBuilder = () => {
         newButterflies[type]++;
         setButterflies(newButterflies);
     }
+
+    function removeButterfly(type){
+        const newButterflies = {...butterflies};
+        newButterflies[type]--;
+        setButterflies(newButterflies);
+    }
+
