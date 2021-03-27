@@ -7,7 +7,8 @@ const DecorControls =({butterflies , addButterfly , removeButterfly}) =>{
         const results = []
         for (const butterfly in butterflies) {
             results.push(<DecorControl 
-
+                type = {butterfly}
+               
 
 
 
