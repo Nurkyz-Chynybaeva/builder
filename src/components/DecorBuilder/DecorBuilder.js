@@ -12,4 +12,8 @@ const DecorBuilder = () => {
       
 
     });
-  
+    function addButterfly(type){
+        const newButterflies = {...butterflies};
+        newButterflies[type]++;
+        setButterflies(newButterflies);
+    }
