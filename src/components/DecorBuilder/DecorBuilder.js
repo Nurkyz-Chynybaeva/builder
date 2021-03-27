@@ -32,7 +32,11 @@ const DecorBuilder = () => {
          addButterfly= {addButterfly}
          removeButterfly= {removeButterfly}
         />
-
+ </div>
+     );
+}
+ 
+export default DecorBuilder;
 
 
 
