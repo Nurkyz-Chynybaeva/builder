@@ -15,7 +15,7 @@ const DecorControls =({butterflies , addButterfly , removeButterfly}) =>{
     return(
         <div className={classes.DecorControls}>
         <strong>Colors</strong>
-
+        {results}
 
 
 
