@@ -1,3 +1,18 @@
 .DecorPreview{
-  background-color: saddlebrown;
+  border-left: 0.1px solid;
+  border-right: 0.1px solid;
+height: 500px;
+  border-top: 20px solid rgb(172, 108, 255);
+  flex: 0 0 500px;
+background-color: rgb(253, 253, 253);
+  margin-right: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.butterflies {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  flex-wrap: wrap;
+  
 }

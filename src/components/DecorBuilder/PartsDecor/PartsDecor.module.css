@@ -1,0 +1,11 @@
+.PartsDecor {
+  
+   background-size: 45px;
+ margin: 5px 30px;
+  display: flex;
+  
+  align-items: center;
+}
+.PartsDecor:hover{
+  transform: scale(1.1);
+}

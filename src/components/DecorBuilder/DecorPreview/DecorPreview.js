@@ -1,23 +1,31 @@
 import classes from "./DecorPreview.module.css";
-import PartsOfTheDecor from "../PartsOfTheDecor/PartsPfTheDecor";
+import PartsDecor from "../PartsDecor/PartsDecor";
+import butterfliesBackground from "../../../images/background2.jpg";
 
-const DecorPreview = ({ingredients}) => {
-  const result = []
+const DecorPreview = ({ butterflies }) => {
+  const result = [];
 
-  for (const ingredient in ingredients) {
-    for (let i = 0; i < ingredients[ingredient]; i++) {
-        result.push(<PartsOfTheDecor type = {ingredient} />)
+  for (const butterfly in butterflies) {
+    for (let i = 0; i < butterflies[butterfly]; i++) {
+      result.push(<PartsDecor
+        type={butterfly}
+      />)
     }
-   }
-  
+  }
 
-  return ( 
-    <div className= {classes.DecorPreview}>
- {result}
+
+  return (
+    <div className={classes.DecorPreview}>
+
+      <div
+        className={classes.butterflies}
+        style={{ backgroundImage: `url(${butterfliesBackground})` }}>
+        {result}
+      </div>
     </div>
-   );
+  );
 }
- 
+
 export default DecorPreview;
 
 

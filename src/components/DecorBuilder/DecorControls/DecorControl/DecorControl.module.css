@@ -1,0 +1,14 @@
+.DecorControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+margin: 10px 20px;
+}
+
+.DecorControl button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  border: none;
+
+}

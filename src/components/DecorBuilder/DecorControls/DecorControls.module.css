@@ -1,0 +1,7 @@
+.DecorControls {
+  flex: 0 0 250px;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgb(216, 101, 252);
+  color: white;
+}
