@@ -1,5 +1,5 @@
 import classes from "./DecorControl.module.css";                  
-import DecorControl from "./DecorControl/DecorControl";
+import PartsDecor from "../../PartsDecor/PartsDecor";
 
 const DecorControl = ( {type , add , remove}) => {
 
