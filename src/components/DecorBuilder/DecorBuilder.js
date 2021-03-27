@@ -28,7 +28,9 @@ const DecorBuilder = () => {
          <DecorPreview butterflies={butterflies}/>
 
          <DecorControls 
-        
+         butterflies= {butterflies}
+         addButterfly= {addButterfly}
+         removeButterfly= {removeButterfly}
         />
 
 
@@ -39,4 +41,3 @@ const DecorBuilder = () => {
 
 
 
-        
