@@ -10,5 +10,8 @@ const DecorControl = ( {type , add , remove}) => {
 
 
 
+<button className = {classes.less} onClick = {() => remove(type)}>-</button>
+  </div>);
+}
 
 
