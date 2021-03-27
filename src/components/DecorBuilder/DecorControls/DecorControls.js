@@ -4,6 +4,7 @@ const DecorControls =({butterflies , addButterfly , removeButterfly}) =>{
 
     removeButterfly}) =>{
         let type = {butterflies}
+        const results = []
 
 
 
