@@ -24,3 +24,4 @@ const DecorBuilder = () => {
         setButterflies(newButterflies);
     }
 
+    return ( <div className={classes.DecorBuilder}>
