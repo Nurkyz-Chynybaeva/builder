@@ -18,3 +18,4 @@ const DecorControl = ( {type , add , remove}) => {
 }
 
 
+export default DecorControl;
