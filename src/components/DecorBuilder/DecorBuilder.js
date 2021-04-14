@@ -1,42 +1,132 @@
 import classes from "./DecorBuilder.module.css";
 import DecorPreview from "./DecorPreview/DecorPreview";
 import DecorControls from "./DecorControls/DecorControls";
-import {useState} from "react";
-
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Modal from "../UL/Modal/Modal";
+import OrderSummary from "./OrderSummary/OrderSummary";
+import Button from "../UL/Button/Button";
 
 const DecorBuilder = () => {
+  const prices = {
+    first: 6,
+    secod: 3
+  }
+
+  const [butterflies, setButterflies] = useState({});
+  const [price, setPrice] = useState(0);
+  const [ordering, setOrdering] = useState(false);
+
+
+  useEffect(loadDefaults, []);
+
+  function loadDefaults() {
+     axios
+      .get('https://builder-5c6b2-default-rtdb.firebaseio.com/default.json ')
+      .then(response => {
+        setPrice(response.data.price);
+        setButterflies(response.data.butterflies);
+      }) 
+    }
+
+
+
+
+
+
+
+  function addButterfly(type) {
+    const newButterflies = { ...butterflies };
+    newButterflies[type]++;
+    setPrice(price + prices[type]);
+    setButterflies(newButterflies);
+  }
+
+  function removeButterfly(type) {
+    if (butterflies[type]) {
+      const newButterflies = { ...butterflies };
+      newButterflies[type]--; 
+       setPrice(price - prices[type])
+      setButterflies(newButterflies);
     
-    const [butterflies , setButterflies ] = useState({ 
-        first : 5 ,   
-        roz : 5 
-      
 
-    });
-    function addButterfly(type){
-        const newButterflies = {...butterflies};
-        newButterflies[type]++;
-        setButterflies(newButterflies);
+
     }
+  }
 
-    function removeButterfly(type){
-        const newButterflies = {...butterflies};
-        newButterflies[type]--;
-        setButterflies(newButterflies);
-    }
+  function startOrdering() {
+    setOrdering(true);
+  }
 
-    return ( <div className={classes.DecorBuilder}>
-         <DecorPreview butterflies={butterflies}/>
+  function stopOrdering() {
+    setOrdering(false);
+  }
 
-         <DecorControls 
-         butterflies= {butterflies}
-         addButterfly= {addButterfly}
-         removeButterfly= {removeButterfly}
-        />
- </div>
-     );
+  
+  function finishOrdering() {
+    axios
+      .post(' https://builder-5c6b2-default-rtdb.firebaseio.com/orders.json', {
+       butterflies: butterflies,
+        price: price,
+        address: "1234 Jusaeva str",
+        phone: "0 777 777 777",
+        name: "Sadyr Japarov",
+      })
+      .then(() => {
+        setOrdering(false);
+        loadDefaults();
+      });
+  }
+
+  return (<div className={classes.DecorBuilder}>
+    <DecorPreview 
+    price={price} 
+    butterflies={butterflies} />
+
+    <DecorControls
+      butterflies={butterflies}
+      addButterfly={addButterfly}
+      removeButterfly={removeButterfly}
+      startOrdering={startOrdering}
+    />
+     <Modal 
+     show={ordering}
+     cancel={stopOrdering}>
+
+<OrderSummary
+            butterflies={butterflies}
+            price={price}
+            />
+          <Button onClick={finishOrdering} green>Checkout</Button>
+          <Button onClick={stopOrdering}>Cancel</Button>
+
+     </Modal>
+  </div>
+  );
 }
- 
+
 export default DecorBuilder;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
