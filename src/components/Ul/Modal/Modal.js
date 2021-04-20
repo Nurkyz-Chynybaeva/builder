@@ -8,6 +8,11 @@ const Modal = ({ children }) => {
       <div className={classes.content}>
         {children}
       </div>
+      <div>
+        <h1>
+          <p></p>
+        </h1>
+      </div>
     </div>
   );
 };
