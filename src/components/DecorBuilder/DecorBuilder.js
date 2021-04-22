@@ -7,11 +7,11 @@ import Modal from "../UL/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../UL/Button/Button";
 
-const DecorBuilder = () => {
+const DecorBuilder = (history) => {
   const prices = {
-    first: 6,
-    secod: 3
-  }
+    purpleButterfly: 5,
+    blueButterfly: 5,
+  };
 
   const [butterflies, setButterflies] = useState({});
   const [price, setPrice] = useState(0);
@@ -30,11 +30,6 @@ const DecorBuilder = () => {
     }
 
 
-
-
-
-
-
   function addButterfly(type) {
     const newButterflies = { ...butterflies };
     newButterflies[type]++;
@@ -48,9 +43,6 @@ const DecorBuilder = () => {
       newButterflies[type]--; 
        setPrice(price - prices[type])
       setButterflies(newButterflies);
-    
-
-
     }
   }
 
@@ -75,6 +67,9 @@ const DecorBuilder = () => {
       .then(() => {
         setOrdering(false);
         loadDefaults();
+        
+
+        history.push('/checkout');
       });
   }
 
@@ -106,32 +101,6 @@ const DecorBuilder = () => {
 }
 
 export default DecorBuilder;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
