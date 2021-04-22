@@ -1,8 +1,12 @@
 
 
+
+
+
 import DrawerOpen from "../Drawer/DrawerOpen/DrawerOpen";
-import Logo from "../../Logo/Logo";
+import Logo from "../../UL/Logo/Logo";
 import Nav from "../../Nav/Nav";
+
 import classes from "./Toolbar.module.css";
 
 const Toolbar = ({ openDrawer }) => {
@@ -16,6 +20,5 @@ const Toolbar = ({ openDrawer }) => {
     </div>
   );
 }
- 
 
 export default Toolbar;
