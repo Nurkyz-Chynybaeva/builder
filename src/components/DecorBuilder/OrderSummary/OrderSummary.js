@@ -2,8 +2,8 @@ import classes from "./OrderSummary.module.css";
 
 const OrderSummary = ({ butterflies , price }) => {
   const labels = {
-   first : "Firsts",
-   second : "Seconds",
+    purpleButterfly : " Purple butterfly",
+   blueButterfly : "Blue butterfly" ,
   }
   
   const results = Object.keys(butterflies).map(type => <li>{labels[type]}:{butterflies[type]}</li>);
@@ -20,10 +20,6 @@ const OrderSummary = ({ butterflies , price }) => {
 }
 
 export default OrderSummary;
-
-
-
-
 
 
 
