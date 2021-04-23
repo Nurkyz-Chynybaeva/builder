@@ -32,6 +32,3 @@ results.push(<DecorControl
 export default DecorControls;
 
 
-
-
-
