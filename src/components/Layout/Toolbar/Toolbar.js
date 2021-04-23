@@ -1,10 +1,5 @@
-
-
-
-
-
 import DrawerOpen from "../Drawer/DrawerOpen/DrawerOpen";
-import Logo from "../../UL/Logo/Logo";
+import Logo from "../../Ul/Logo/Logo";
 import Nav from "../../Nav/Nav";
 
 import classes from "./Toolbar.module.css";

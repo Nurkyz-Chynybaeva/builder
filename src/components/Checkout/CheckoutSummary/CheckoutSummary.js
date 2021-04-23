@@ -1,5 +1,5 @@
 import classes from "./CheckoutSummary.module.css";
-import Button from "../../UL/Button/Button";
+import Button from "../../Ul/Button/Button";
 import DecorPreview from "../../DecorBuilder/DecorPreview/DecorPreview";
 
 const CheckoutSummary = ({ cancelCallback }) => {

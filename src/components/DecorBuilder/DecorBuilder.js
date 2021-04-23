@@ -3,9 +3,9 @@ import DecorPreview from "./DecorPreview/DecorPreview";
 import DecorControls from "./DecorControls/DecorControls";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Modal from "../UL/Modal/Modal";
+import Modal from "../Ul/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
-import Button from "../UL/Button/Button";
+import Button from "../Ul/Button/Button";
 
 const DecorBuilder = (history) => {
   const prices = {
@@ -22,7 +22,7 @@ const DecorBuilder = (history) => {
 
   function loadDefaults() {
      axios
-      .get('https://builder-5c6b2-default-rtdb.firebaseio.com/default.json ')
+      .get('https://builder-c1f06-default-rtdb.firebaseio.com/default.json')
       .then(response => {
         setPrice(response.data.price);
         setButterflies(response.data.butterflies);
@@ -57,7 +57,7 @@ const DecorBuilder = (history) => {
   
   function finishOrdering() {
     axios
-      .post(' https://builder-5c6b2-default-rtdb.firebaseio.com/orders.json', {
+      .post('https://builder-c1f06-default-rtdb.firebaseio.com/orders.json', {
        butterflies: butterflies,
         price: price,
         address: "1234 Jusaeva str",
@@ -101,6 +101,4 @@ const DecorBuilder = (history) => {
 }
 
 export default DecorBuilder;
-
-
 

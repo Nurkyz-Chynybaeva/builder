@@ -1,6 +1,6 @@
 import classes from "./DecorControls.module.css";
 import DecorControl from "./DecorControl/DecorControl";
-import Button from "../../UL/Button/Button";
+import Button from "../../Ul/Button/Button";
 
 const DecorControls =({
     butterflies , 

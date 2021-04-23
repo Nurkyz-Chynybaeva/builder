@@ -2,7 +2,7 @@ import classes from "./OrderSummary.module.css";
 
 const OrderSummary = ({ butterflies , price }) => {
   const labels = {
-    purpleButterfly : " Purple butterfly",
+    purpleButterfly : "Purple butterfly",
    blueButterfly : "Blue butterfly" ,
   }
   
