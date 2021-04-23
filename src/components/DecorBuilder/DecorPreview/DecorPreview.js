@@ -33,6 +33,3 @@ const DecorPreview = ({ butterflies , price }) => {
 
 export default DecorPreview;
 
-
-
-
