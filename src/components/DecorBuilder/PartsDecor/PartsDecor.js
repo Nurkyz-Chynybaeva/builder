@@ -1,15 +1,15 @@
 import React from "react";
 import classes from "./PartsDecor.module.css";
-import first from "../../../images/first.jpg";
-import second from "../../../images/second.png"
+import purpleButterfly from "../../../images/bluebutterfly.jpg";
+import blueButterfly from "../../../images/purpleButterfly.png";
 
 
 
 const PartsDecor = ({ type , fixed }) => {
   const types = {
-    first : {backgroundImage : `url(${first})` , width : "35px" , height : "35px"} ,
+    purpleButterfly : {backgroundImage : `url(${first})` , width : "35px" , height : "35px"} ,
 
-second : {backgroundImage :`url (${second})` , width : "35px", height : "35px"},
+blueButterfly : {backgroundImage :`url (${second})` , width : "35px", height : "35px"},
   }
   
 return (
@@ -20,9 +20,4 @@ return (
 
 
 export default React.memo(PartsDecor);
-
-
-
-
-
 
