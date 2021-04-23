@@ -1,7 +1,7 @@
 
 
 
-import Logo from "../../UI/Logo/Logo";
+import Logo from "../../UL/Logo/Logo";
 import Nav from "../../Nav/Nav";
 import Backdrop from "../../UL/Backdrop/Backdrop";
 
