@@ -5,6 +5,7 @@ import PartsDecor from "../../PartsDecor/PartsDecor";
 const DecorControl = ( {type , add , remove , count}) => {
 
   return ( 
+
   <div className = {classes.DecorControl}>
 <Button onClick={() => add(type)}>+</Button>
       <div className={classes.butterfly}>
@@ -16,3 +17,5 @@ const DecorControl = ( {type , add , remove , count}) => {
 
 
 export default DecorControl;
+
+
