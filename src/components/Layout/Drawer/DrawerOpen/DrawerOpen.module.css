@@ -1,5 +1,4 @@
 .DrawerOpen {
-  
   height: 3rem;
   padding: .5rem;
   margin: .5rem;
@@ -7,13 +6,11 @@
   flex-flow: column;
   justify-content: center;
   cursor: pointer;
-
 }
 .DrawerOpen > div {
   height: 3px;
   width: 2rem;
-  background-color: rgb(188, 106, 226);
-
+  background-color: white;
 }
 .DrawerOpen > div:not(:last-child) {
   margin-bottom: .5rem;
