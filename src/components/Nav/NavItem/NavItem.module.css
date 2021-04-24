@@ -9,8 +9,6 @@
   }
   .NavItem a:hover {
     border-color: white;
-
-  
   }
   .NavItem a:active,
   .NavItem a.active {
