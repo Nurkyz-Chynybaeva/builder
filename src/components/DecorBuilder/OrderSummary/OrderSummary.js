@@ -5,7 +5,10 @@ const OrderSummary = ({ butterflies , price }) => {
     purpleButterfly : "Purple butterfly",
    blueButterfly : "Blue butterfly" ,
   }
-  const results = butterflies.map((type) => <li>{type}</li>);
+
+  
+  const results = Object.keys(butterflies)
+  .map(type => <li>{labels[type]} : {butterflies[type]}</li>)
 
   // const results = Object.keys(butterflies).map(type => <li>{labels[type]}:{butterflies[type]}</li>);
 
