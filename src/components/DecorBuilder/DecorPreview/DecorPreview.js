@@ -1,6 +1,6 @@
 import classes from "./DecorPreview.module.css";
 import PartsDecor from "../PartsDecor/PartsDecor";
-import butterfliesBackground from "../../../images/background2.jpg";
+
 
 
 const DecorPreview = ({ butterflies , price }) => {
@@ -18,11 +18,9 @@ const DecorPreview = ({ butterflies , price }) => {
   return (
     <div className={classes.DecorPreview}>
  <div className={classes.decor}>
-      <div
-        className={classes.butterflies}
-        style={{ backgroundImage: `url(${butterfliesBackground})` }}>
+
         {result}
-      </div>
+  
     </div>
 
 <div className={classes.price}>{price.toFixed(1)} som</div>
