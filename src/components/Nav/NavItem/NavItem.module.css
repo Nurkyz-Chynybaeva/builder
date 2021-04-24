@@ -17,7 +17,7 @@
   
   @media (max-width: 549px) {
     .NavItem a {
-      border-right: 10px solid transparent;
+      border-right: 11px solid transparent;
       border-bottom: none;
     }
   }
