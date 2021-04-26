@@ -4,6 +4,7 @@ const OrderSummary = ({ butterflies , price }) => {
   const labels = {
     purpleButterfly : "Purple butterfly",
    blueButterfly : "Blue butterfly" ,
+   pinkButterfly : "Pink butterfly" ,
   }
 
   
