@@ -6,9 +6,10 @@ const CheckoutSummary = ({ cancelCallback }) => {
   return (
     <div className={classes.CheckoutSummary}>
       <div>
-        < DecorPreview ingredients={{
+        < DecorPreview butterflies={{
          blueButterfly : 5,
-         purpleButterfly : 5 ,
+         purpleButterfly : 5,
+         pinkButterfly : 5,
         }} price={100} />
       </div>
       <div>

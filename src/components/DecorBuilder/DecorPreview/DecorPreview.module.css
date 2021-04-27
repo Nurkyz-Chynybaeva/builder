@@ -1,6 +1,7 @@
 
 .DecorPreview {
   flex: 0 0 400px;
+
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
@@ -8,20 +9,24 @@
 border: 7px dotted  rgb(188, 75, 240);
 margin: 20px 20px;
 }
+
 .decor{
   width: 600px;
   height: 540px;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.butterflies{
 
-    width: 380px;
-    height: 380px;
+.butterflies{
+ position: relative;
+  background-repeat: no-repeat;
+  border:  10px solid ;
+    width: 600px;
+    height: 500px;
     justify-content:center;
     position: relative;
   
