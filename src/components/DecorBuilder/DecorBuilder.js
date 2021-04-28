@@ -11,6 +11,7 @@ const DecorBuilder = (history) => {
   const prices = {
     purpleButterfly: 5,
     blueButterfly: 5,
+    pinkButterfly : 5,
   };
 
   const [butterflies, setButterflies] = useState({});
