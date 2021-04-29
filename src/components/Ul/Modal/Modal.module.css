@@ -7,11 +7,12 @@
   left: 30%;
   z-index: 1;
   width: 40%;
-  background-color: rgb(242, 228, 248);
+  
+  background-color: rgb(243, 232, 223);
   padding: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   transition: transform .3s ease-out;
-  color: rgb(182, 83, 202);
+  color:rgb(161, 99, 7) ;
 }
 
 @media (max-width: 800px) {
