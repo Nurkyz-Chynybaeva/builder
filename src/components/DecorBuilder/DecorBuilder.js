@@ -9,9 +9,12 @@ import Button from "../Ul/Button/Button";
 
 const DecorBuilder = (history) => {
   const prices = {
-    purpleButterfly: 5,
-    blueButterfly: 5,
-    pinkButterfly : 5,
+   firstButterfly : 5, 
+   secondButterfly : 5 ,
+   thirdButterfly : 5 ,
+   fourthButterfly : 5 ,
+   fifthButterfly : 5 ,
+
   };
 
   const [butterflies, setButterflies] = useState({});
