@@ -13,17 +13,17 @@ const DecorControls =({
     
     for (const butterfly in butterflies) {
         total += butterflies[butterfly];
-results.push(<DecorControl 
-    type = {butterfly}
-    key={butterfly}
-    count={butterflies[butterfly]}
+results.push(<DecorControl
+    key={butterfly}  
     add={addButterfly}
     remove = {removeButterfly}
+count={butterflies[butterfly]}
+    type = {butterfly}
     />)
     }
     return(
         <div className={classes.DecorControls}>
-            <strong>Colors</strong>
+            <strong>Butterflies</strong>
             {results}
             <Button disabled={!total} onClick={startOrdering}>Order</Button>
         </div>

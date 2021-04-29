@@ -1,10 +1,10 @@
 .DecorControls {
   flex: 0 0 250px;
-  border-radius: 1rem;
+  border-radius: 2rem;
   padding: 1rem;
-  background-color: rgb(241, 191, 255);
+  background-color: rgb(249, 238, 252);
   color:  rgb(188, 75, 240);
   text-align: center;
 margin: 20px 0px;
-font-size: 20px;
+font-size: 24px;
 }

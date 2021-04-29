@@ -8,8 +8,9 @@ const DecorPreview = ({ butterflies , price }) => {
   for (const butterfly in butterflies) {
     for (let i = 0; i < butterflies[butterfly]; i++) {
       result.push(<PartsDecor
-        type={butterfly}
+
         key = {butterfly + i}
+                type={butterfly}
       />)
     }
   }
@@ -21,8 +22,6 @@ const DecorPreview = ({ butterflies , price }) => {
 <div className = {classes.butterflies}
 style = {{backgroundImage : `url(${backgroundImage})`}}
 >
-
-
         {result}
   </div>
     </div>
