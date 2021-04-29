@@ -5,8 +5,8 @@
   flex-wrap: wrap;
   margin-bottom: 1rem;
   justify-content: center;
-border: 7px dotted  rgb(124, 9, 177);
-color: #f4cefc;
+border: 7px dotted  rgb(233, 182, 88);
+color: #fcdbce;
 margin: 20px 20px;
 }
 
@@ -31,10 +31,10 @@ margin: 20px 20px;
   
 }
 .price {
-  background-color: rgb(235, 195, 252);
+  background-color: rgb(250, 245, 221);
   border-radius: 1rem;
   padding: 0 1rem;
   font-size: 1.7rem;
-  color:  rgb(188, 75, 240);
+  color:  rgb(161, 99, 7);
   font-weight: bold;
 }
