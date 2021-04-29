@@ -10,8 +10,7 @@ const PartsDecor = ({ type, fixed }) => {
 
     purpleButterfly: { backgroundImage: `url(${purpleButterfly})`, width: "35px", height: "35px" },
     blueButterfly: { backgroundImage: `url (${blueButterfly})`, width: "35px", height: "35px" },
-    pinkButterfly: { backgroundImage: `url (${pinkButterfly})`, width: "35px" , height : "35px" }
-    
+    pinkButterfly: { backgroundImage: `url (${pinkButterfly})`, width: "35px" , height : "35px" },
   }
 
 
@@ -51,4 +50,3 @@ const PartsDecor = ({ type, fixed }) => {
 
 
 export default React.memo(PartsDecor);
-
