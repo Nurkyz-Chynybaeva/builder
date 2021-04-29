@@ -1,18 +1,20 @@
 import React from "react";
 import classes from "./PartsDecor.module.css";
-import purpleButterfly from "../../../images/purplebutterfly.png";
-import blueButterfly from "../../../images/bluebutterfly.jpg";
-import pinkButterfly from "../../../images/pinkButterfly.png";
+import firstButterfly from "../../../images/firstButterfly.png";
+import secondButterfly from "../../../images/secondButterfly.png";
+import thirdButterfly from "../../../images/thirdButterfly.png";
+import fourthButterfly from "../../../images/fourthButterfly.png";
+import fifthButterfly from "../../../images/fifthButterfly.png";
 
 const PartsDecor = ({ type, fixed }) => {
 
   const types = {
-
-    purpleButterfly: { backgroundImage: `url(${purpleButterfly})`, width: "35px", height: "35px" },
-    blueButterfly: { backgroundImage: `url (${blueButterfly})`, width: "35px", height: "35px" },
-    pinkButterfly: { backgroundImage: `url (${pinkButterfly})`, width: "35px" , height : "35px" },
+   firstButterfly : { backgroundImage : `url(${firstButterfly})` , width : "30px" , height : "30px" },
+   secondButterfly : { backgroundImage : `url(${secondButterfly})` , width : "30px" , height : "30px"},
+   thirdButterfly : { backgroundImage : `url (${thirdButterfly})` , width  : "30px" , height : "30px" },
+   fourthButterfly : { backgroundImage : `url (${fourthButterfly})` , width  : "30px" , height : "30px" },
+   fifthButterfly : { backgroundImage : `url (${fifthButterfly})` , width  : "30px" , height : "30px" },
   }
-
 
   function getPosition(butterflyWidth) {
     const diameter = 380;

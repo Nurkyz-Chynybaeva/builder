@@ -7,9 +7,12 @@ const CheckoutSummary = ({ cancelCallback }) => {
     <div className={classes.CheckoutSummary}>
       <div>
         < DecorPreview butterflies={{
-         blueButterfly : 5,
-         purpleButterfly : 5,
-         pinkButterfly : 5,
+         firstButterfly : 5,
+         secondButterfly : 5 ,
+        thirdButterfly : 5 ,
+        fourthButterfly : 5 ,
+        fifthButterfly : 5 ,
+        
         }} price={100} />
       </div>
       <div>
