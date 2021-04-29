@@ -1,6 +1,4 @@
 
-
-
 .content {
   position: fixed;
   top: 15%;
@@ -13,6 +11,9 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   transition: transform .3s ease-out;
   color:rgb(161, 99, 7) ;
+
+
+  color: #eec7a8;
 }
 
 @media (max-width: 800px) {
