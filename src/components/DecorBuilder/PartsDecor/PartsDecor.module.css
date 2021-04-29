@@ -1,9 +1,12 @@
+
+
 .PartsDecor {
   
    background-size: cover;
 
- margin: 5px 30px;
+ 
   display: flex;
   
   align-items: center;
 }
+
