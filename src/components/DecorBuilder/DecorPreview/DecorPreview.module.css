@@ -5,8 +5,7 @@
   flex-wrap: wrap;
   margin-bottom: 1rem;
   justify-content: center;
-border: 7px dotted  rgb(233, 182, 88);
-color: #fcdbce;
+
 margin: 20px 20px;
 }
 
@@ -36,6 +35,6 @@ margin: 20px 20px;
   border-radius: 1rem;
   padding: 0 1rem;
   font-size: 1.7rem;
-  color:  rgb(161, 99, 7);
+  color: rgb(187, 39, 187);
   font-weight: bold;
 }
