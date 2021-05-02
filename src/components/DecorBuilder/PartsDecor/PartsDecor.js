@@ -19,19 +19,19 @@ const PartsDecor = ({ type, fixed }) => {
   function getPosition(butterflyWidth) {
     const diameter = 380;
     const radius = diameter / 2;
-    const butterflyradius = parseInt(butterflyWidth) / 2;
+    const butterflyRadius = parseInt(butterflyWidth) / 2;
 
     const butterflyTop = Math.round(Math.random() * diameter);
     const butterflyLeft = Math.round(Math.random() * diameter);
 
     const distance = Math.sqrt(
       Math.pow(butterflyTop - radius, 2) + Math.pow(butterflyLeft - radius, 2)
-    ) + butterflyradius;
+    ) + butterflyRadius;
 
     return distance < radius
       ? {
-        top: butterflyTop - butterflyradius,
-        left: butterflyLeft - butterflyradius
+        top: butterflyTop - butterflyRadius,
+        left: butterflyLeft - butterflyRadius
       }
       : getPosition(butterflyWidth);
   }
@@ -44,7 +44,7 @@ const PartsDecor = ({ type, fixed }) => {
   }
   // Get random rotation for this ingredient.
 
-
+  types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
   return (
     <div className={classes.PartsDecor} style={types[type]}></div>
   );

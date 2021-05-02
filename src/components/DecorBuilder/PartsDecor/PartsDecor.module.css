@@ -1,12 +1,6 @@
 
 
 .PartsDecor {
-  
-   background-size: cover;
-
- 
-  display: flex;
-  
-  align-items: center;
+  position:absolute;
 }
 
