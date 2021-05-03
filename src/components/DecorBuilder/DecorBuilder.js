@@ -2,7 +2,7 @@ import classes from "./DecorBuilder.module.css";
 import DecorPreview from "./DecorPreview/DecorPreview";
 import DecorControls from "./DecorControls/DecorControls";
 import { useEffect, useState } from "react";
-import axios from "axios";
+
 import Modal from "../Ul/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../Ul/Button/Button";
@@ -22,31 +22,31 @@ const DecorBuilder = (history) => {
   const [ordering, setOrdering] = useState(false);
 
 
-  useEffect(loadDefaults, []);
+  // useEffect(loadDefaults, []);
 
-  function loadDefaults() {
-     axios
-      .get('https://builder-c1f06-default-rtdb.firebaseio.com/default.json')
-      .then(response => {
-        setPrice(response.data.price);
-        setButterflies(response.data.butterflies);
-      }) 
-    }
+  // function loadDefaults() {
+  //    axios
+  //     .get('https://builder-c1f06-default-rtdb.firebaseio.com/default.json')
+  //     .then(response => {
+  //       setPrice(response.data.price);
+  //       setButterflies(response.data.butterflies);
+  //     }) 
+  //   }
 
 
   function addButterfly(type) {
     const newButterflies = { ...butterflies };
     newButterflies[type]++;
-    setPrice(price + prices[type]);
-    setButterflies(newButterflies);
+    // setPrice(price + prices[type]);
+    // setButterflies(newButterflies);
   }
 
   function removeButterfly(type) {
     if (butterflies[type]) {
       const newButterflies = { ...butterflies };
       newButterflies[type]--; 
-       setPrice(price - prices[type])
-      setButterflies(newButterflies);
+      //  setPrice(price - prices[type])
+      // setButterflies(newButterflies);
     }
   }
 
@@ -70,7 +70,7 @@ const DecorBuilder = (history) => {
       })
       .then(() => {
         setOrdering(false);
-        loadDefaults();
+        // loadDefaults();
         
 
         history.push('/checkout');
