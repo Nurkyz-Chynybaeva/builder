@@ -2,7 +2,7 @@ import classes from "./DecorBuilder.module.css";
 import DecorPreview from "./DecorPreview/DecorPreview";
 import DecorControls from "./DecorControls/DecorControls";
 import { useEffect, useState } from "react";
-
+import axios from "axios";
 import Modal from "../Ul/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../Ul/Button/Button";
