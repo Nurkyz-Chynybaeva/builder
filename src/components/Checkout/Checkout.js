@@ -1,6 +1,6 @@
 import DecorPreview from "../DecorBuilder/DecorPreview/DecorPreview";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
-
+import classes from "./Checkout.module.css";
 
 const Checkout = ({ history }) => {
   function cancelCallback() {
@@ -8,7 +8,7 @@ const Checkout = ({ history }) => {
   }
 
   return (
-    <div>
+    <div  className={classes.Checkout}>
   
   < DecorPreview butterflies={{
          firstButterfly : 5,
