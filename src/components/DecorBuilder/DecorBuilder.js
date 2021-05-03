@@ -16,9 +16,6 @@ const DecorBuilder = (history) => {
    fifthButterfly : 5 ,
 
   };
-
-  const [butterflies, setButterflies] = useState({});
-  const [price, setPrice] = useState(0);
   const [ordering, setOrdering] = useState(false);
 
 
