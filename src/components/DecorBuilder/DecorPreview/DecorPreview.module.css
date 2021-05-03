@@ -24,12 +24,10 @@
     width: 500px;
     height: 380px;
   background-size: cover;
-
-  
 }
 .price {
-  
-  box-shadow: 0 0 1px black;
+  background-color: rgb(228, 188, 247);
+  box-shadow: 0 0 7px rgb(90, 34, 100);
   border-radius: 1rem;
   padding: 0 1rem;
   font-size: 1.7rem;
