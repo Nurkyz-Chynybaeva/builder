@@ -9,6 +9,8 @@ import builderReducer from './store/builderReducer';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const store = createStore(builderReducer);
+
 ReactDOM.render(
   <React.StrictMode>
 

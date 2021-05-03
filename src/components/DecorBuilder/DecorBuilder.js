@@ -6,6 +6,7 @@ import axios from "axios";
 import Modal from "../Ul/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../Ul/Button/Button";
+import { useSelector } from "react-redux";
 
 const DecorBuilder = (history) => {
   const prices = {
@@ -16,7 +17,7 @@ const DecorBuilder = (history) => {
    fifthButterfly : 5 ,
 
   };
-  const ingredients = useSelector(state => state.ingredients);
+  const butterflies = useSelector(state => state.butterflies);
   const price = useSelector(state => state.price);
   const [ordering, setOrdering] = useState(false);
 
