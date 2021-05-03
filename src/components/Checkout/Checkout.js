@@ -18,7 +18,9 @@ const Checkout = ({ history }) => {
         fifthButterfly : 5 ,
         
         }} price={100} />
-      <CheckoutForm/>
+      <CheckoutForm
+      cancelCallback = {cancelCallback}
+      submitCallback = {submitCallback}/>
 
     </div>
   );
