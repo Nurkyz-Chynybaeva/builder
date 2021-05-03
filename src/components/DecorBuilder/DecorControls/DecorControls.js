@@ -3,9 +3,7 @@ import DecorControl from "./DecorControl/DecorControl";
 import Button from "../../Ul/Button/Button";
 
 const DecorControls =({
-    butterflies , 
-    addButterfly , 
-    removeButterfly ,
+    butterflies ,
     startOrdering
 }) =>
 {const results = []
@@ -14,9 +12,7 @@ const DecorControls =({
     for (const butterfly in butterflies) {
         total += butterflies[butterfly];
 results.push(<DecorControl
-    key={butterfly}  
-    add={addButterfly}
-    remove = {removeButterfly}
+    key={butterfly}
 count={butterflies[butterfly]}
     type = {butterfly}
     />)

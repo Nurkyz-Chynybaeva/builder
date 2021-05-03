@@ -16,6 +16,8 @@ const DecorBuilder = (history) => {
    fifthButterfly : 5 ,
 
   };
+  const ingredients = useSelector(state => state.ingredients);
+  const price = useSelector(state => state.price);
   const [ordering, setOrdering] = useState(false);
 
 
@@ -30,22 +32,6 @@ const DecorBuilder = (history) => {
   //     }) 
   //   }
 
-
-  function addButterfly(type) {
-    const newButterflies = { ...butterflies };
-    newButterflies[type]++;
-    // setPrice(price + prices[type]);
-    // setButterflies(newButterflies);
-  }
-
-  function removeButterfly(type) {
-    if (butterflies[type]) {
-      const newButterflies = { ...butterflies };
-      newButterflies[type]--; 
-      //  setPrice(price - prices[type])
-      // setButterflies(newButterflies);
-    }
-  }
 
   function startOrdering() {
     setOrdering(true);
@@ -81,8 +67,6 @@ const DecorBuilder = (history) => {
 
     <DecorControls
       butterflies={butterflies}
-      addButterfly={addButterfly}
-      removeButterfly={removeButterfly}
       startOrdering={startOrdering}
     />
      <Modal 
