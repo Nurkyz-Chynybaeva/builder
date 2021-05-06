@@ -2,9 +2,10 @@ import Layout from "./components/Layout/Layout";
 import "./App.css";
 import DecorBuilder from  "./components/DecorBuilder/DecorBuilder";
 import Checkout from "./components/Checkout/Checkout";
+import Orders from "./components/Orders/Orders";
 import { Redirect, Route, Switch } from "react-router";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
 
@@ -12,6 +13,7 @@ function App() {
 <Switch>
           <Route path="/" component={DecorBuilder} exact />
           <Route path="/checkout" component={Checkout} />
+          <Route path="/orders" component ={Orders}/>
           <Redirect to="/" />
         </Switch>
     

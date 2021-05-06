@@ -1,3 +1,4 @@
+  
 import classes from "./OrderSummary.module.css";
 
 const OrderSummary = ({ butterflies , price }) => {
@@ -7,8 +8,6 @@ const OrderSummary = ({ butterflies , price }) => {
    thirdButterfly : "third butterfly",
    fourthButterfly : "fourth butterfly",
   fifthButterfly : "fifth butterfly",
-  
-
   }
 
   
@@ -29,4 +28,3 @@ const OrderSummary = ({ butterflies , price }) => {
 }
 
 export default OrderSummary;
-

@@ -8,15 +8,8 @@ import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../Ul/Button/Button";
 import { useSelector } from "react-redux";
 
-const DecorBuilder = (history) => {
-  const prices = {
-   firstButterfly : 5, 
-   secondButterfly : 5 ,
-   thirdButterfly : 5 ,
-   fourthButterfly : 5 ,
-   fifthButterfly : 5 ,
-
-  };
+const DecorBuilder = ({history}) => {
+  
   const butterflies = useSelector(state => state.butterflies);
   const price = useSelector(state => state.price);
   const [ordering, setOrdering] = useState(false);
@@ -44,22 +37,22 @@ const DecorBuilder = (history) => {
 
   
   function finishOrdering() {
-    axios
-      .post('https://builder-c1f06-default-rtdb.firebaseio.com/orders.json', {
-       butterflies: butterflies,
-        price: price,
-        address: "1234 Jusaeva str",
-        phone: "0 777 777 777",
-        name: "Sadyr Japarov",
-      })
-      .then(() => {
+    // axios
+    //   .post('https://builder-c1f06-default-rtdb.firebaseio.com/orders.json', {
+    //    butterflies: butterflies,
+    //     price: price,
+    //     address: "1234 Jusaeva str",
+    //     phone: "0 777 777 777",
+    //     name: "Sadyr Japarov",
+    //   })
+    //   .then(() => {
         setOrdering(false);
         // loadDefaults();
         
 
         history.push('/checkout');
-      });
-  }
+      // });
+  } ; 
 
   return (<div className={classes.DecorBuilder}>
     <DecorPreview 
