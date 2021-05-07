@@ -13,7 +13,7 @@ const dispatch = useDispatch();
   <div className = {classes.DecorControl}>
  <Button onClick={() => dispatch(add(type))}>+</Button>
       <div className={classes.butterfly}>
-        <PizzaIngredient type={type} fixed />
+        <PartsDecor type={type} fixed />
       </div>
       <Button onClick={() => dispatch(remove(type))} disabled={!count}>-</Button>
   </div>);
