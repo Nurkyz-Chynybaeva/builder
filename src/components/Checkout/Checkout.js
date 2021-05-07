@@ -2,12 +2,16 @@ import DecorPreview from "../DecorBuilder/DecorPreview/DecorPreview";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
 import axios from "axios";
+import { useSelector } from "react-redux";
 
 const Checkout = ({ history }) => {
+  const butterflies = useSelector(state => state.builder.butterflies);
+  const price = useSelector(state => state.builder.price);
+
   function cancelCallback() {
     history.replace('/');
   }
-  
+
   function submitCallback(event) {
     const data = new FormData(event.target);
 
@@ -15,16 +19,9 @@ const Checkout = ({ history }) => {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
-      butterflies: {
-        blueButterfly : 5,
-        coralButterfly : 5 ,
-       purpleButterfly : 5 ,
-       whiteButterfly : 5 ,
-       yelloButterfly : 5 ,
-        
-      },
-      price: 100,
-    }).then(response => {
+      butterflies: butterflies, 
+      price :price, 
+  }).then(response => {
       history.replace('/');
     });
 
@@ -34,14 +31,7 @@ const Checkout = ({ history }) => {
   return (
     <div  className={classes.Checkout}>
   
-  < DecorPreview butterflies={{
-         blueButterfly : 5,
-         coralButterfly : 5 ,
-        purpleButterfly : 5 ,
-        whiteButterfly : 5 ,
-        yelloButterfly : 5 ,
-        
-        }} price={100} />
+  < DecorPreview butterflies={butterflies} price={price} />
       <CheckoutForm
       cancelCallback = {cancelCallback}
       submitCallback = {submitCallback}/>
