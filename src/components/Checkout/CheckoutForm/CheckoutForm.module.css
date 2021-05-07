@@ -21,5 +21,5 @@
   }
   .CheckoutForm > div > input:focus {
     outline: none;
-    border-color: darkgray;
+    border-color: rgb(109, 14, 14);
   }
