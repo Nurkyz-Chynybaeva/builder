@@ -1,6 +1,6 @@
 
 import axios from "axios";
-import {ADD_BUTTERFLY , REMOVE_BUTTERFLY} from "./types";
+import {ADD_BUTTERFLY , REMOVE_BUTTERFLY , SET_BUTTERFLIES} from "./types";
 
 export const add = (butterfly) => ({
     type: "ADD_BUTTERFLY", 
@@ -13,8 +13,8 @@ export const remove = (butterfly) => ({
 });
 
 
-export const set = (butterfly) => ({
-    type: "SET_BUTTERFLY", 
+export const set = (data) => ({
+    type: "SET_BUTTERFLIES", 
     data : data
 });
 

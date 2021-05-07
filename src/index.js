@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import { createStore , applyMiddleware } from 'redux';
+import { createStore , applyMiddleware , combineReducers } from 'redux';
 import builderReducer from './store/builderReducer';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import thunk from 'redux-thunk';
+import builder from './store/reducers/builder';
+import orders from './store/reducers/orders';
 
-
+const rootReducer = combineReducers({ builder, orders });
 const store = createStore(builderReducer , applyMiddleware(thunk));
 
 ReactDOM.render(

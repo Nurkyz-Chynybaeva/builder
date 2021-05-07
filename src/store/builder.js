@@ -1,4 +1,4 @@
-import {ADD_BUTTERFLY, REMOVE_BUTTERFLY, SET_BUTTERFLY} from "./actions/types";
+import {ADD_BUTTERFLY, REMOVE_BUTTERFLY, SET_BUTTERFLIES} from "./actions/types";
 const initialState = {
     butterflies : {
     },
@@ -24,7 +24,7 @@ const initialState = {
         newState.butterflies[action.buttterfly]--;
         newState.price -= prices[action.butterfly];
         break;
-        case "SET_BUTTERFLY":
+        case "SET_BUTTERFLIES":
           newState.butterflies = action.data.butterflies;
       newState.price = action.data.price;
     
