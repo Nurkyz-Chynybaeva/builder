@@ -8,13 +8,13 @@
 
   }
   .NavItem a:hover {
-    border-color: rgb(252, 243, 243);
-    background-color: rgb(243, 209, 186);
+    border-color: rgb(144, 62, 199);
+    background-color:  rgb(221, 201, 235);
 
   }
   .NavItem a:active,
   .NavItem a.active {
-    border-color:  rgb(243, 209, 186);
+    border-color: rgb(118, 21, 182);
   }
   
   @media (max-width: 549px) {

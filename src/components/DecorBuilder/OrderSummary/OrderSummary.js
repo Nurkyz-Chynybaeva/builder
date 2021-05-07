@@ -3,11 +3,11 @@ import classes from "./OrderSummary.module.css";
 
 const OrderSummary = ({ butterflies , price }) => {
   const labels = {
-    firstButterfly : "first butterfly",
-   secondButterfly : "second butterfly" ,
-   thirdButterfly : "third butterfly",
-   fourthButterfly : "fourth butterfly",
-  fifthButterfly : "fifth butterfly",
+    blueButterfly : "Blue butterfly",
+    coralButterfly : "Coral butterfly" ,
+   purpleButterfly : "Purple butterfly" ,
+   whiteButterfly : "White butterfly" ,
+   yelloButterfly : "Yellow butterfly" ,
   }
 
   

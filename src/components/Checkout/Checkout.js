@@ -7,10 +7,7 @@ const Checkout = ({ history }) => {
   function cancelCallback() {
     history.replace('/');
   }
-
-
-
-
+  
   function submitCallback(event) {
     const data = new FormData(event.target);
 
@@ -19,11 +16,11 @@ const Checkout = ({ history }) => {
       address: data.get('address'),
       phone: data.get('phone'),
       butterflies: {
-        firstButterfly: 10,
-        secondButterfly: 10,
-        thirdButterfly: 10,
-        fourthButterfly: 10,
-        fifthButterfly: 10,
+        blueButterfly : 5,
+        coralButterfly : 5 ,
+       purpleButterfly : 5 ,
+       whiteButterfly : 5 ,
+       yelloButterfly : 5 ,
         
       },
       price: 100,
@@ -34,21 +31,15 @@ const Checkout = ({ history }) => {
     event.preventDefault();
   }
 
-
-
-
-
-
-
   return (
     <div  className={classes.Checkout}>
   
   < DecorPreview butterflies={{
-         firstButterfly : 5,
-         secondButterfly : 5 ,
-        thirdButterfly : 5 ,
-        fourthButterfly : 5 ,
-        fifthButterfly : 5 ,
+         blueButterfly : 5,
+         coralButterfly : 5 ,
+        purpleButterfly : 5 ,
+        whiteButterfly : 5 ,
+        yelloButterfly : 5 ,
         
         }} price={100} />
       <CheckoutForm

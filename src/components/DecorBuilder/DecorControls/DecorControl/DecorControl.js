@@ -11,11 +11,11 @@ const dispatch = useDispatch();
   return ( 
 
   <div className = {classes.DecorControl}>
-<Button onClick={() => dispatch({ type: "ADD_INGREDIENT", ingredient: type })}>+</Button>
+ <Button onClick={() => dispatch(add(type))}>+</Button>
       <div className={classes.butterfly}>
-        <PartsDecor type={type} fixed />
+        <PizzaIngredient type={type} fixed />
       </div>
-      <Button onClick={() => dispatch({ type: "REMOVE_INGREDIENT", ingredient: type })} disabled={!count}>-</Button>
+      <Button onClick={() => dispatch(remove(type))} disabled={!count}>-</Button>
   </div>);
 }
 

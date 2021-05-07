@@ -1,19 +1,19 @@
 import React from "react";
 import classes from "./PartsDecor.module.css";
-import firstButterfly from "../../../images/firstButterfly.png";
-import secondButterfly from "../../../images/secondButterfly.png";
-import thirdButterfly from "../../../images/thirdButterfly.png";
-import fourthButterfly from "../../../images/fourthButterfly.png";
-import fifthButterfly from "../../../images/fifthButterfly.png";
+import blueButterfly from "../../../images/blueButterfly.png";
+import coralButterfly from "../../../images/coralButterfly.png";
+import purpleButterfly from "../../../images/purpleButterfly.png";
+import whiteButterfly from "../../../images/whiteButterfly.png";
+import yelloButterfly from "../../../images/yelloButterfly.png";
 
 const PartsDecor = ({ type, fixed }) => {
 
   const types = {
-   firstButterfly : { backgroundImage : `url(${firstButterfly})` , width : "30px" , height : "30px" },
-   secondButterfly : { backgroundImage : `url(${secondButterfly})` , width : "30px" , height : "30px"},
-   thirdButterfly : { backgroundImage : `url (${thirdButterfly})` , width  : "30px" , height : "30px" },
-   fourthButterfly : { backgroundImage : `url (${fourthButterfly})` , width  : "30px" , height : "30px" },
-   fifthButterfly : { backgroundImage : `url (${fifthButterfly})` , width  : "30px" , height : "30px" },
+   blueButterfly : { backgroundImage : `url(${blueButterfly})` , width: "35px", height: "35px"},
+   coralButterfly : { backgroundImage : `url(${coralButterfly})` , width: "35px", height: "35px"},
+   purpleButterfly : { backgroundImage : `url (${purpleButterfly})` , width: "35px", height: "35px"},
+   whiteButterfly : { backgroundImage : `url (${whiteButterfly})` , width: "35px", height: "35px"  },
+   yelloButterfly : { backgroundImage : `url (${yelloButterfly})` , width: "35px", height: "35px"},
   }
 
   function getPosition(butterflyWidth) {
@@ -42,8 +42,7 @@ const PartsDecor = ({ type, fixed }) => {
     types[type].top = position.top + "px";
     types[type].left = position.left + "px";
   }
-  // Get random rotation for this ingredient.
-
+  // Get random rotation for this butterfly.
   types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
   return (
     <div className={classes.PartsDecor} style={types[type]}></div>
