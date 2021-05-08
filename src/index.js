@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { createStore , applyMiddleware , combineReducers } from 'redux';
-import builderReducer from './store/builderReducer';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import thunk from 'redux-thunk';

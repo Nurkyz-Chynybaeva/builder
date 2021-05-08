@@ -16,8 +16,6 @@ const App = () => {
           <Route path="/orders" component ={Orders}/>
           <Redirect to="/" />
         </Switch>
-    
-      
       </Layout>
 
     </div>
@@ -25,4 +23,3 @@ const App = () => {
 }
 
 export default App;
-

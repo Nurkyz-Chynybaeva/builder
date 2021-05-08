@@ -1,4 +1,4 @@
-import {ADD_BUTTERFLY, REMOVE_BUTTERFLY, SET_BUTTERFLIES} from "./actions/types";
+import {ADD_BUTTERFLY, REMOVE_BUTTERFLY, SET_BUTTERFLIES} from "../actions/types";
 const initialState = {
     butterflies : {
     },
