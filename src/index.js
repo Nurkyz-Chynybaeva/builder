@@ -10,7 +10,7 @@ import builder from './store/reducers/builder';
 import orders from './store/reducers/orders';
 
 const rootReducer = combineReducers({ builder, orders });
-const store = createStore(builderReducer , applyMiddleware(thunk));
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
   <React.StrictMode>
