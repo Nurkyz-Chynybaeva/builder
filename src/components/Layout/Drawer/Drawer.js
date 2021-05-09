@@ -1,6 +1,4 @@
 
-
-
 import Logo from "../../Ul/Logo/Logo";
 import Nav from "../../Nav/Nav";
 import Backdrop from "../../Ul/Backdrop/Backdrop";
