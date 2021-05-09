@@ -1,11 +1,9 @@
 
-
-
 import classes from "./Button.module.css";
 
 const Button = (props) => {
   const className = [classes.Button];
-  if (props.green) {
+  if (props.purple) {
     className.push(classes.green);
   }
 
