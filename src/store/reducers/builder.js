@@ -14,19 +14,19 @@ const initialState = {
   
   const builder = (state = initialState, action) => {
     const newState = { ...state };
-  
     switch (action.type) {
-      case "ADD_BUTTERFLY":
+      case ADD_BUTTERFLY:
         newState.butterflies[action.butterfly]++;
         newState.price += prices[action.butterfly];
         break;
-      case "REMOVE_BUTTERFLY":
-        newState.butterflies[action.buttterfly]--;
+      case REMOVE_BUTTERFLY:
+        newState.butterflies[action.butterfly]--;
         newState.price -= prices[action.butterfly];
         break;
-        case "SET_BUTTERFLIES":
-          newState.butterflies = action.data.butterflies;
-      newState.price = action.data.price;
+      case SET_BUTTERFLIES:
+        newState.butterflies = action.data.butterflies;
+        newState.price = action.data.price;
+        break;
     
       default:
         break;
