@@ -2,16 +2,18 @@ import classes from "./DecorBuilder.module.css";
 import DecorPreview from "./DecorPreview/DecorPreview";
 import DecorControls from "./DecorControls/DecorControls";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import axios from "../../axios";
 import Modal from "../Ul/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../Ul/Button/Button";
-import { useSelector } from "react-redux";
+import {useDispatch , useSelector } from "react-redux";
+import { load } from "../../store/actions/builder";
+import withAxios from "../withAxios";
 
 const DecorBuilder = ({history}) => {
-  
-  const butterflies = useSelector(state => state.butterflies);
-  const price = useSelector(state => state.price);
+  const dispatch = useDispatch();
+  const butterflies = useSelector(state => state.builder.butterflies);
+  const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
 
 
@@ -37,47 +39,31 @@ const DecorBuilder = ({history}) => {
 
   
   function finishOrdering() {
-    // axios
-    //   .post('https://builder-c1f06-default-rtdb.firebaseio.com/orders.json', {
-    //    butterflies: butterflies,
-    //     price: price,
-    //     address: "1234 Jusaeva str",
-    //     phone: "0 777 777 777",
-    //     name: "Sadyr Japarov",
-    //   })
-    //   .then(() => {
         setOrdering(false);
         // loadDefaults();
-        
-
         history.push('/checkout');
-      // });
   } ; 
 
   return (<div className={classes.DecorBuilder}>
-    <DecorPreview 
-    price={price} 
-    butterflies={butterflies} />
-
+    <DecorPreview  
+    butterflies={butterflies} 
+    price={price} />
     <DecorControls
       butterflies={butterflies}
-      startOrdering={startOrdering}
-    />
+      startOrdering={startOrdering}/>
      <Modal 
      show={ordering}
      cancel={stopOrdering}>
 
 <OrderSummary
             butterflies={butterflies}
-            price={price}
-            />
-          <Button onClick={finishOrdering} green>Checkout</Button>
+            price={price}/>
+          <Button onClick={finishOrdering} purple>Checkout</Button>
           <Button onClick={stopOrdering}>Cancel</Button>
-
      </Modal>
   </div>
   );
 }
 
-export default DecorBuilder;
+export default withAxios(DecorBuilder, axios);
 
