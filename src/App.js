@@ -1,6 +1,6 @@
 import Layout from "./components/Layout/Layout";
 import "./App.css";
-import DecorBuilder from  "./components/DecorBuilder/DecorBuilder";
+import DecorBuilder from "./components/DecorBuilder/DecorBuilder";
 import Checkout from "./components/Checkout/Checkout";
 import Orders from "./components/Orders/Orders";
 import { Redirect, Route, Switch } from "react-router";
@@ -10,10 +10,10 @@ const App = () => {
     <div className="App">
 
       <Layout>
-<Switch>
+        <Switch>
           <Route path="/" component={DecorBuilder} exact />
           <Route path="/checkout" component={Checkout} />
-          <Route path="/orders" component ={Orders}/>
+          <Route path="/orders" component={Orders} />
           <Redirect to="/" />
         </Switch>
       </Layout>
