@@ -2,6 +2,7 @@ import classes from "./DecorControl.module.css";
 import Button from "../../../Ul/Button/Button";  
 import PartsDecor from "../../PartsDecor/PartsDecor";
 import { useDispatch } from "react-redux";
+import {add , remove} from "../../../../store/actions/builder";
 
 const DecorControl = ( {type , count}) => {
 const dispatch = useDispatch();
@@ -16,7 +17,8 @@ const dispatch = useDispatch();
         <PartsDecor type={type} fixed />
       </div>
       <Button onClick={() => dispatch(remove(type))} disabled={!count}>-</Button>
-  </div>);
+  </div>
+  );
 }
 
 

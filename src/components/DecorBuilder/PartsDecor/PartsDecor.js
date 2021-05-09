@@ -51,3 +51,4 @@ const PartsDecor = ({ type, fixed }) => {
 
 
 export default React.memo(PartsDecor);
+    
