@@ -1,6 +1,5 @@
 import DecorPreview from "./DecorPreview/DecorPreview";
 import DecorControls from "./DecorControls/DecorControls";
-
 import classes from "./DecorBuilder.module.css";
 import { useEffect, useState } from "react";
 import axios from "../../axios";

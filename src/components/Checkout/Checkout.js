@@ -20,9 +20,9 @@ const Checkout = ({ history }) => {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
-      butterflies: butterflies, 
-      price :price, 
-  }).then(response => {
+      butterflies: butterflies,
+      price: price,
+    }).then(response => {
       history.replace('/');
     });
 
@@ -30,14 +30,14 @@ const Checkout = ({ history }) => {
   }
 
   return (
-    <div  className={classes.Checkout}>
-  
-  <DecorPreview butterflies={butterflies} price={price} />
+    <div className={classes.Checkout}>
+
+      <DecorPreview butterflies={butterflies} price={price} />
       <CheckoutForm
-      cancelCallback = {cancelCallback}
-      submitCallback = {submitCallback}/>
+        cancelCallback={cancelCallback}
+        submitCallback={submitCallback} />
     </div>
   );
 }
-  
+
 export default withAxios(Checkout, axios);

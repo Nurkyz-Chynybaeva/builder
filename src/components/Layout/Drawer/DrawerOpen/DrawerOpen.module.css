@@ -10,11 +10,7 @@
 .DrawerOpen > div {
   height: 3px;
   width: 2rem;
-
-  
   background-color:rgb(185, 71, 230) ;
-
-  
 }
 .DrawerOpen > div:not(:last-child) {
   margin-bottom: .5rem;

@@ -9,11 +9,11 @@ import yelloButterfly from "../../../images/yelloButterfly.png";
 const PartsDecor = ({ type, fixed }) => {
 
   const types = {
-   blueButterfly : { backgroundImage : `url(${blueButterfly})` , width: "35px", height: "35px"},
-   coralButterfly : { backgroundImage : `url(${coralButterfly})` , width: "35px", height: "35px"},
-   purpleButterfly : { backgroundImage : `url (${purpleButterfly})` , width: "35px", height: "35px"},
-   whiteButterfly : { backgroundImage : `url (${whiteButterfly})` , width: "35px", height: "35px"  },
-   yelloButterfly : { backgroundImage : `url (${yelloButterfly})` , width: "35px", height: "35px"},
+    blueButterfly: { backgroundImage: `url(${blueButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
+    coralButterfly: { backgroundImage: `url(${coralButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
+    purpleButterfly: { backgroundImage: `url (${purpleButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
+    whiteButterfly: { backgroundImage: `url (${whiteButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
+    yelloButterfly: { backgroundImage: `url (${yelloButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
   }
 
   function getPosition(butterflyWidth) {
@@ -51,4 +51,3 @@ const PartsDecor = ({ type, fixed }) => {
 
 
 export default React.memo(PartsDecor);
-    

@@ -1,18 +1,17 @@
-  
 import classes from "./OrderSummary.module.css";
 
-const OrderSummary = ({ butterflies , price }) => {
+const OrderSummary = ({ butterflies, price }) => {
   const labels = {
-    blueButterfly : "Blue butterfly",
-    coralButterfly : "Coral butterfly" ,
-   purpleButterfly : "Purple butterfly" ,
-   whiteButterfly : "White butterfly" ,
-   yelloButterfly : "Yellow butterfly" ,
+    blueButterfly: "Blue butterfly",
+    coralButterfly: "Coral butterfly",
+    purpleButterfly: "Purple butterfly",
+    whiteButterfly: "White butterfly",
+    yelloButterfly: "Yellow butterfly",
   }
 
-  
+
   const results = Object.keys(butterflies)
-  .map(type => <li>{labels[type]} : {butterflies[type]}</li>)
+    .map(type => <li>{labels[type]} : {butterflies[type]}</li>)
 
   // const results = Object.keys(butterflies).map(type => <li>{labels[type]}:{butterflies[type]}</li>);
 

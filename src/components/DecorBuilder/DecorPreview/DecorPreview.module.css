@@ -21,10 +21,11 @@
 
 .butterflies{
  position: relative;
-    width: 500px;
-    height: 380px;
-  background-size: cover;
+ width: 500px;
+ height: 380px;
+ background-size: cover;
 }
+
 .price {
   background-color: rgb(228, 188, 247);
   box-shadow: 0 0 7px rgb(90, 34, 100);

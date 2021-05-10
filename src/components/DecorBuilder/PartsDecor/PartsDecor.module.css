@@ -1,6 +1,5 @@
 .PartsDecor {
   position:absolute;
-  background-size: cover;
   transform: scale(1.5);
 
   animation-name: butterflies;
@@ -10,6 +9,7 @@
   animation-timing-function: linear;
 
 }
+/* 
 @keyframes butterflies{
   10%{
     transform-origin: bottom;
@@ -21,4 +21,4 @@
 100%{
     transform-origin: bottom;
 }
-}
+} */
