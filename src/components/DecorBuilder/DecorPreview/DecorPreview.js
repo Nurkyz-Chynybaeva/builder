@@ -17,9 +17,7 @@ const DecorPreview = ({ butterflies, price }) => {
   return (
     <div className={classes.DecorPreview}>
       <div className={classes.decor}>
-        <div className={classes.butterflies}
-          style={{ backgroundImage: `url(${backgroundImage})` }}
-        >
+        <div className={classes.butterflies}>
           {result}
         </div>
       </div>

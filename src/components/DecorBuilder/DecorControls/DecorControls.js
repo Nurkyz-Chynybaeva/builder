@@ -6,7 +6,7 @@ const DecorControls = ({
     butterflies,
     startOrdering
 }) => {
-    const results = []
+    const results = [];
     let total = 0;
 
     for (const butterfly in butterflies) {

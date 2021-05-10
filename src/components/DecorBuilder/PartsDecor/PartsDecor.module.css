@@ -1,11 +1,12 @@
 .PartsDecor {
   position:absolute;
+}
+.fixed {
   animation-name: butterflies;
   animation-iteration-count: infinite;
   animation-duration: 4s;
   animation-direction: alternate;
   animation-timing-function: linear;
-
 }
 
 @keyframes butterflies{

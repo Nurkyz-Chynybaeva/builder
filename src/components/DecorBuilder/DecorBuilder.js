@@ -16,7 +16,7 @@ const DecorBuilder = ({ history }) => {
   const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
 
-  useEffect(() => dispatch(load()), []);
+  useEffect(() => dispatch(load()), [dispatch]);
 
   // function loadDefaults() {
   //   axios
@@ -61,7 +61,7 @@ const DecorBuilder = ({ history }) => {
             butterflies={butterflies}
             price={price}
             />
-          <Button onClick={finishOrdering} purple>Checkout</Button>
+          <Button onClick={finishOrdering} purple="purple">Checkout</Button>
           <Button onClick={stopOrdering}>Cancel</Button>
         </Modal>
     </div>

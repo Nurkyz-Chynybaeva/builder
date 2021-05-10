@@ -7,13 +7,13 @@ import whiteButterfly from "../../../images/whiteButterfly.png";
 import yelloButterfly from "../../../images/yelloButterfly.png";
 
 const PartsDecor = ({ type, fixed }) => {
-
+  const classNames = [classes.PartsDecor];
   const types = {
     blueButterfly: { backgroundImage: `url(${blueButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
     coralButterfly: { backgroundImage: `url(${coralButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
-    purpleButterfly: { backgroundImage: `url (${purpleButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
-    whiteButterfly: { backgroundImage: `url (${whiteButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
-    yelloButterfly: { backgroundImage: `url (${yelloButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
+    purpleButterfly: { backgroundImage: `url(${purpleButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
+    whiteButterfly: { backgroundImage: `url(${whiteButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
+    yelloButterfly: { backgroundImage: `url(${yelloButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
   }
 
   function getPosition(butterflyWidth) {
@@ -41,11 +41,12 @@ const PartsDecor = ({ type, fixed }) => {
     const position = getPosition(types[type].width);
     types[type].top = position.top + "px";
     types[type].left = position.left + "px";
+    classNames.push(classes.fixed);
   }
   // Get random rotation for this butterfly.
   types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
   return (
-    <div className={classes.PartsDecor} style={types[type]}></div>
+    <div className={classNames.join(' ')} style={types[type]}></div>
   );
 }
 

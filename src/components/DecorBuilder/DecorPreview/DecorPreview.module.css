@@ -5,6 +5,9 @@
   flex-wrap: wrap;
   margin-bottom: 1rem;
   justify-content: center;
+  background-image: url(../../../images/background.png);
+
+  /* style={{ backgroundImage: `url(${backgroundImage})` }} */
 }
 
 .decor{
