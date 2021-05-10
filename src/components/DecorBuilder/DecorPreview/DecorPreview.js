@@ -1,6 +1,5 @@
 import classes from "./DecorPreview.module.css";
 import PartsDecor from "../PartsDecor/PartsDecor";
-import backgroundImage from "../../../images/background.png"
 
 const DecorPreview = ({ butterflies, price }) => {
   const result = [];
