@@ -1,4 +1,24 @@
 .PartsDecor {
   position:absolute;
   background-size: cover;
+  transform: scale(1.5);
+
+  animation-name: butterflies;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+
+}
+@keyframes butterflies{
+  10%{
+    transform-origin: bottom;
+}
+50%{
+    transform: scale(.9);
+    transform-origin: bottom;
+}
+100%{
+    transform-origin: bottom;
+}
 }
