@@ -43,7 +43,7 @@ const PartsDecor = ({ type, fixed }) => {
     types[type].left = position.left + "px";
   }
   // Get random rotation for this butterfly.
-  types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
+  // types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
   return (
     <div className={classes.PartsDecor} style={types[type]}></div>
   );

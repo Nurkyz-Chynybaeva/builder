@@ -1,7 +1,5 @@
 .PartsDecor {
   position:absolute;
-  transform: scale(1.5);
-
   animation-name: butterflies;
   animation-iteration-count: infinite;
   animation-duration: 4s;
