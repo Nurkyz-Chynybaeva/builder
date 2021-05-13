@@ -4,8 +4,8 @@
     padding: 0 1rem;
     border-radius: 1rem;
     border: 2px dotted;
-  background-color: rgb(241, 219, 245);
-  color:rgb(185, 71, 230) ;
+    background-color: rgb(241, 219, 245);
+    color:rgb(185, 71, 230) ;
     font-weight: bold;
     font-size: 1.5rem;
     cursor: pointer;

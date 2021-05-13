@@ -18,5 +18,3 @@ const DecorControl = ({ type, count }) => {
   );
 }
 export default DecorControl;
-
-

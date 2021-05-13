@@ -11,6 +11,7 @@ const Modal = ({ show, children, cancel }) => {
       <Backdrop show={show} click={cancel} />
       <div className={classes.content} style={style}>
         {children}
+      
       </div>
     </div>
   );

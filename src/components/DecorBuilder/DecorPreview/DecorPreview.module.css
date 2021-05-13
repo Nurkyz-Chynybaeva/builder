@@ -6,6 +6,7 @@
   margin-bottom: 1rem;
   justify-content: center;
   background-image: url(../../../images/background.png);
+  padding-right: 60px;
 
   /* style={{ backgroundImage: `url(${backgroundImage})` }} */
 }
@@ -24,9 +25,10 @@
 
 .butterflies{
  position: relative;
- width: 500px;
- height: 380px;
+ width: 350px;
+ height: 320px;
  background-size: cover;
+ margin-left: 70px;
 }
 
 .price {
@@ -34,6 +36,8 @@
   box-shadow: 0 0 7px rgb(90, 34, 100);
   border-radius: 1rem;
   padding: 0 1rem;
+  margin-top:50px ;
+  margin-left:-190px;
   font-size: 1.7rem;
   color: rgb(187, 39, 187);
   font-weight: bold;

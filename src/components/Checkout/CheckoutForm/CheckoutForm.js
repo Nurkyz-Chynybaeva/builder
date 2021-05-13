@@ -22,8 +22,3 @@ const CheckoutForm = ({cancelCallback , submitCallback}) => {
 }
  
 export default CheckoutForm;
-
-
-
-
-

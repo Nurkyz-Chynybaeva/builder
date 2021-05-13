@@ -1,10 +1,12 @@
-import React from "react";
+
+import React, { memo } from "react";
 import classes from "./PartsDecor.module.css";
 import blueButterfly from "../../../images/blueButterfly.png";
 import coralButterfly from "../../../images/coralButterfly.png";
 import purpleButterfly from "../../../images/purpleButterfly.png";
 import whiteButterfly from "../../../images/whiteButterfly.png";
 import yelloButterfly from "../../../images/yelloButterfly.png";
+import oval from "../../../images/oval5.png";
 
 const PartsDecor = ({ type, fixed }) => {
   const classNames = [classes.PartsDecor];
@@ -14,6 +16,7 @@ const PartsDecor = ({ type, fixed }) => {
     purpleButterfly: { backgroundImage: `url(${purpleButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
     whiteButterfly: { backgroundImage: `url(${whiteButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
     yelloButterfly: { backgroundImage: `url(${yelloButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
+    oval : {backgroundImage : `url(${oval})` , width: "95px", height: "55px", backgroundSize: "cover",},
   }
 
   function getPosition(butterflyWidth) {
@@ -48,6 +51,8 @@ const PartsDecor = ({ type, fixed }) => {
   return (
     <div className={classNames.join(' ')} style={types[type]}></div>
   );
+
+
 }
 
 
