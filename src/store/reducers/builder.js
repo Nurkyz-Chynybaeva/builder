@@ -8,8 +8,9 @@ const initialState = {
     blueButterfly : 0.5,
     coralButterfly : .3 ,
    purpleButterfly : .4 ,
-   whiteButterfly : .5 ,
+   colorfulButterfly : .5 ,
    yelloButterfly : .6 ,
+   darkBlueButterfly : 10,
   };
   
   const builder = (state = initialState, action) => {

@@ -6,6 +6,8 @@ import coralButterfly from "../../../images/coralButterfly.png";
 import purpleButterfly from "../../../images/purpleButterfly.png";
 import darkBlueButterfly from "../../../images/darkBlueButterfly.png";
 import yelloButterfly from "../../../images/yelloButterfly.png";
+import colorfulButterfly from "../../../images/colorfulButterfly.png";
+
 
 
 const PartsDecor = ({ type, fixed }) => {
@@ -16,7 +18,7 @@ const PartsDecor = ({ type, fixed }) => {
     purpleButterfly: { backgroundImage: `url(${purpleButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
     darkBlueButterfly: { backgroundImage: `url(${darkBlueButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
     yelloButterfly: { backgroundImage: `url(${yelloButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
-   
+    colorfulButterfly: { backgroundImage: `url(${colorfulButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
   }
 
   function getPosition(butterflyWidth) {
