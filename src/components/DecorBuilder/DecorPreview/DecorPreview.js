@@ -21,7 +21,7 @@ const DecorPreview = ({ butterflies, price }) => {
         </div>
       </div>
 
-      <div className={classes.price}>{price.toFixed(1)} som</div>
+      <div className={classes.price}>{price.toFixed(1)}som</div>
 
     </div>
   );
