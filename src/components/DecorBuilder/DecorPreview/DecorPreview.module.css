@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 100%;
+  
 }
 
 .butterflies{
@@ -29,7 +30,8 @@
  width: 350px;
  height: 320px;
  background-size: cover;
- margin-left: 70px;
+ margin: 90px  70px;
+
 }
 
 .price {
@@ -37,7 +39,8 @@
   box-shadow: 0 0 7px rgb(90, 34, 100);
   border-radius: 1rem;
   padding: 0 1rem;
-  margin-top:30px ;
+  margin-top:40px;
+  margin-left: 80px;
  
   font-size: 1.7rem;
   color: rgb(187, 39, 187);
