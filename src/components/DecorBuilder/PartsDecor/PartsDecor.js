@@ -1,5 +1,5 @@
 
-import React, { memo } from "react";
+import React from "react";
 import classes from "./PartsDecor.module.css";
 import blueButterfly from "../../../images/blueButterfly.png";
 import coralButterfly from "../../../images/coralButterfly.png";
