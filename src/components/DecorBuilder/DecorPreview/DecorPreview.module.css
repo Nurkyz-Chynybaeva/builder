@@ -1,11 +1,11 @@
 
 .DecorPreview {
-  flex: 0 0 400px;
+  flex: 0 0 500px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
   justify-content: center;
-  background-image: url(../../../images/background.png);
+  background-image: url(../../../images/background.png) ;
   padding-right: 60px;
   
 
@@ -28,9 +28,8 @@
 .butterflies{
  position: relative;
  width: 350px;
- height: 320px;
+ height: 350px;
  background-size: cover;
- margin: 90px  70px;
 
 }
 
@@ -40,7 +39,7 @@
   border-radius: 1rem;
   padding: 0 1rem;
   margin-top:40px;
-  margin-left: 80px;
+  margin-left: 50px;
  
   font-size: 1.7rem;
   color: rgb(187, 39, 187);
