@@ -9,7 +9,6 @@ import yelloButterfly from "../../../images/yelloButterfly.png";
 import colorfulButterfly from "../../../images/colorfulButterfly.png";
 
 
-
 const PartsDecor = ({ type, fixed }) => {
   const classNames = [classes.PartsDecor];
   const types = {
