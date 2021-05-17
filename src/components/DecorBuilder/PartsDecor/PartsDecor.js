@@ -40,6 +40,12 @@ const PartsDecor = ({ type, fixed }) => {
       : getPosition(butterflyWidth);
   }
 
+  if (Math.random() >= .9) {
+    types[type].animationPlayState = "paused";
+  }
+
+  
+
   // Get random position for this ingredient.
   if (!fixed) {
     const position = getPosition(types[type].width);
