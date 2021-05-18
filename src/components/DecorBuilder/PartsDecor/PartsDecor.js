@@ -7,17 +7,19 @@ import purpleButterfly from "../../../images/purpleButterfly.png";
 import darkBlueButterfly from "../../../images/darkBlueButterfly.png";
 import yelloButterfly from "../../../images/yelloButterfly.png";
 import colorfulButterfly from "../../../images/colorfulButterfly.png";
+import saturatedRedButterfly from "../../../images/saturatedRedButterfly.png";
 
 
 const PartsDecor = ({ type, fixed }) => {
   const classNames = [classes.PartsDecor];
   const types = {
-    blueButterfly: { backgroundImage: `url(${blueButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
+    blueButterfly: { backgroundImage: `url(${blueButterfly})`, width: "55px", height: "55px", backgroundSize: "cover", },
     coralButterfly: { backgroundImage: `url(${coralButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
     purpleButterfly: { backgroundImage: `url(${purpleButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
-    darkBlueButterfly: { backgroundImage: `url(${darkBlueButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
+    darkBlueButterfly: { backgroundImage: `url(${darkBlueButterfly})`, width: "50px", height: "50px", backgroundSize: "cover", },
     yelloButterfly: { backgroundImage: `url(${yelloButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
     colorfulButterfly: { backgroundImage: `url(${colorfulButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
+    saturatedRedButterfly : { backgroundImage: `url(${saturatedRedButterfly})`, width: "45px", height: "45px", backgroundSize: "cover", },
   }
 
   function getPosition(butterflyWidth) {

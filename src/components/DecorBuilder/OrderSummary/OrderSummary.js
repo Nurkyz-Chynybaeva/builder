@@ -8,6 +8,7 @@ const OrderSummary = ({ butterflies, price }) => {
     darkBlueButterfly : "Dark blue butterfly",
     yelloButterfly: "Yellow butterfly",
     colorfulButterfly : "Colorful butterfly",
+    saturatedRedButterfly : "Saturated red butterfly",
   }
 
 

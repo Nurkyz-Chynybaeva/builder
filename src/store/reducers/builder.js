@@ -11,6 +11,7 @@ const initialState = {
    colorfulButterfly : .5 ,
    yelloButterfly : .6 ,
    darkBlueButterfly : 10,
+   saturatedRedButterfly : 50,
   };
   
   const builder = (state = initialState, action) => {
