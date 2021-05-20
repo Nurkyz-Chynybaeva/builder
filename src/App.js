@@ -27,6 +27,7 @@ const App = () => {
 
 
   if (isAuthenticated) {
+    
     routesOutput = (
       <Switch>
         <Route path="/" exact component={DecorBuilder} />
