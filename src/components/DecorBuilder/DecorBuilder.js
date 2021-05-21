@@ -12,15 +12,20 @@ import withAxios from "../withAxios";
 
 const DecorBuilder = ({ history }) => {
   const dispatch = useDispatch();
+  const isAuthenticated = useSelector(state => state.auth.token !== null);
   const butterflies = useSelector(state => state.builder.butterflies);
   const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
 
   useEffect(() => dispatch(load()), [dispatch]);
 
-
   function startOrdering() {
-    setOrdering(true);
+    if (isAuthenticated){
+      setOrdering(true);
+    }
+    else{
+      history.push("/auth")
+    }
   }
 
   function stopOrdering() {
