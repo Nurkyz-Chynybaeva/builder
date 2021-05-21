@@ -8,6 +8,7 @@ import withAxios from "../withAxios";
 
 const Orders = () => {
   const dispatch = useDispatch();
+  const { token , id } = useSelector(state => state.auth);
   const orders = useSelector(state => state.orders);
   
   useEffect(() => {

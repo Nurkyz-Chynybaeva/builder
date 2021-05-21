@@ -6,7 +6,8 @@ import { useSelector } from "react-redux";
 import withAxios from "../withAxios";
 
 const Checkout = ({ history }) => {
-  const butterflies = useSelector(state => state.builder.butterflies);
+  const {token , id } = useSelector(state => state.auth);
+    const butterflies = useSelector(state => state.builder.butterflies);
   const price = useSelector(state => state.builder.price);
 
   function cancelCallback() {
@@ -16,7 +17,7 @@ const Checkout = ({ history }) => {
   function submitCallback(event) {
     const data = new FormData(event.target);
 
-    axios.post('/orders.json', {
+    axios.post('/orders.json?auth=' + token, {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
