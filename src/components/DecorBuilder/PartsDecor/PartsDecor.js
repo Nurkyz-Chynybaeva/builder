@@ -13,7 +13,7 @@ import saturatedRedButterfly from "../../../images/saturatedRedButterfly.png";
 const PartsDecor = ({ type, fixed }) => {
   const classNames = [classes.PartsDecor];
   const types = {
-    blueButterfly: { backgroundImage: `url(${blueButterfly})`, width: "55px", height: "55px", backgroundSize: "cover", },
+    blueButterfly: { backgroundImage: `url(${blueButterfly})`, width: "50px", height: "50px", backgroundSize: "cover", },
     coralButterfly: { backgroundImage: `url(${coralButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
     purpleButterfly: { backgroundImage: `url(${purpleButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
     darkBlueButterfly: { backgroundImage: `url(${darkBlueButterfly})`, width: "50px", height: "50px", backgroundSize: "cover", },
