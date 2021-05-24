@@ -1,5 +1,6 @@
-import Layout from "./components/Layout/Layout";
+
 import "./App.css";
+import Layout from "./components/Layout/Layout";
 import DecorBuilder from "./components/DecorBuilder/DecorBuilder";
 import Checkout from "./components/Checkout/Checkout";
 import Orders from "./components/Orders/Orders";
@@ -24,10 +25,7 @@ const App = () => {
       <Redirect to="/" />
     </Switch>
   );
-
-
   if (isAuthenticated) {
-    
     routesOutput = (
       <Switch>
         <Route path="/" exact component={DecorBuilder} />
@@ -45,7 +43,7 @@ const App = () => {
     <div className="App">
 
       <Layout>
-{routesOutput}
+        {routesOutput}
       </Layout>
 
     </div>

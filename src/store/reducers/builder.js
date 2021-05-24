@@ -26,9 +26,7 @@ const initialState = {
         newState.price -= prices[action.butterfly];
         break;
       case SET_BUTTERFLIES:
-        newState.butterflies = action.data.butterflies;
-        newState.price = action.data.price;
-        break;
+        return {...action.data};
     
       default:
         break;

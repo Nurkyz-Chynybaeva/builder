@@ -33,7 +33,7 @@ export const restore = (dispatch) => {
       success(dispatch, { idToken, localId });
       timeout(dispatch, (expirationDate.getTime() - new Date().getTime()) / 1000);
     }
-    else {
+    else {    
       logout(dispatch);
     }
   }
@@ -59,3 +59,5 @@ export const auth = (dispatch, method, email, password) => axios
     timeout(dispatch, +data.expiresIn);
   })
   .catch(error => fail(dispatch, error));
+
+

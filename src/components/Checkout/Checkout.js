@@ -6,8 +6,8 @@ import { useSelector } from "react-redux";
 import withAxios from "../withAxios";
 
 const Checkout = ({ history }) => {
-  const {token , id } = useSelector(state => state.auth);
-    const butterflies = useSelector(state => state.builder.butterflies);
+  const {token, id } = useSelector(state => state.auth);
+  const butterflies = useSelector(state => state.builder.butterflies);
   const price = useSelector(state => state.builder.price);
 
   function cancelCallback() {
@@ -42,3 +42,6 @@ const Checkout = ({ history }) => {
 }
 
 export default withAxios(Checkout, axios);
+
+
+

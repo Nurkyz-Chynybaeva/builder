@@ -17,6 +17,8 @@ export default withAxios(() => {
     start(dispatch);
 
     const data = new FormData(event.target);
+    const method = event.nativeEvent.submitter.innerText == "Sign in"
+      ? "signin" : "signup";
     auth(dispatch, method, data.get('email'), data.get('password'));
 
     event.preventDefault();
@@ -54,3 +56,9 @@ export default withAxios(() => {
     </div>
   );
 }, axios);
+
+
+
+
+
+
