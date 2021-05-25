@@ -62,3 +62,4 @@ const DecorBuilder = ({ history }) => {
 }
 
 export default withAxios(DecorBuilder, axios);
+

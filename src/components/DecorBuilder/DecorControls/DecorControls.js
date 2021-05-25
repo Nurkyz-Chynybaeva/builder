@@ -26,5 +26,5 @@ const DecorControls = ({
     );
 }
 export default DecorControls;
-
+    
 
