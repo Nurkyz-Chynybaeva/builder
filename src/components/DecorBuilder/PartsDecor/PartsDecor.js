@@ -11,6 +11,7 @@ import saturatedRedButterfly from "../../../images/saturatedRedButterfly.png";
 
 
 const PartsDecor = ({ type, fixed }) => {
+  const classNames = [classes.PartsDecor];
   const types = {
     blueButterfly: { backgroundImage: `url(${blueButterfly})`, width: "50px", height: "50px", backgroundSize: "cover", },
     coralButterfly: { backgroundImage: `url(${coralButterfly})`, width: "35px", height: "35px", backgroundSize: "cover", },
@@ -52,13 +53,13 @@ const PartsDecor = ({ type, fixed }) => {
     const position = getPosition(types[type].width);
     types[type].top = position.top + "px";
     types[type].left = position.left + "px";
-    // classNames.push(classes.butterflies);
+    classNames.push(classes.animated);
   }
   // Get random rotation for this butterfly.
   types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 
   return (
-    <div className={classes.PartsDecor} style={types[type]}></div>
+    <div className={classNames.join(" ")} style={types[type]}></div>
   );
 }
 

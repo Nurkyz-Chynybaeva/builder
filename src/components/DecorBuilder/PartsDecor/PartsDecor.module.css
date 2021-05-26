@@ -1,7 +1,7 @@
 .PartsDecor {
   position:absolute;
 }
-.fixed {
+.animated {
   animation-name: butterflies;
   animation-iteration-count: infinite;
   animation-duration: 4s;

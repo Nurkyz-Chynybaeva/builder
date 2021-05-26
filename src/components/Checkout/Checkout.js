@@ -23,6 +23,7 @@ const Checkout = ({ history }) => {
       phone: data.get('phone'),
       butterflies: butterflies,
       price: price,
+      userId: id
     }).then(response => {
       history.replace('/');
     });
