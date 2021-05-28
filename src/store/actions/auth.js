@@ -11,7 +11,7 @@ export const success = (dispatch, { idToken, localId }) => dispatch({
 
 export const fail = (dispatch, error) => dispatch({
   type: AUTH_FAIL, error
-});
+})
 
 export const logout = (dispatch) => {
   localStorage.removeItem("token");
